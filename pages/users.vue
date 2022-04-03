@@ -107,7 +107,6 @@
           />
           <svg
             class="page__content__users__modal--closebtn"
-            fill="white"
             viewBox="0 0 100 100"
             @click="showUser = -1"
           >

@@ -131,6 +131,8 @@
 <script lang="ts">
 import Vue from "vue";
 
+import { Context } from "@nuxt/types";
+
 import UserCard from "../components/UserCard.vue";
 import UserModal from "../components/UserModal.vue";
 
@@ -138,7 +140,7 @@ export default Vue.extend({
   name: "UsersPage",
   components: { UserCard, UserModal },
   layout: "loggedin",
-  async asyncData({ $axios }) {
+  async asyncData({ $axios }: Context) {
     const users = await $axios.$get("/users");
     return { users };
   },

@@ -5,7 +5,7 @@ interface IStateObj {
 type State = () => IStateObj;
 
 export const state: State = () => ({
-  isLoggedIn: true,
+  isLoggedIn: false,
 });
 
 export const mutations = {

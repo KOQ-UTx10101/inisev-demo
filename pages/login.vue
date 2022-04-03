@@ -25,9 +25,11 @@
 <script lang="ts">
 import Vue from "vue";
 
+import { Context } from "@nuxt/types";
+
 export default Vue.extend({
   name: "LoginPage",
-  middleware({ store, redirect }) {
+  middleware({ store, redirect }: Context) {
     if (store.state.isLoggedIn) {
       return redirect("/");
     }

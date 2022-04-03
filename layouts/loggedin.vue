@@ -3,9 +3,11 @@
 </template>
 
 <script lang="ts">
+import { Context } from "@nuxt/types";
+
 export default {
   name: "LoggedInLayout",
-  middleware({ store, redirect }) {
+  middleware({ store, redirect }: Context) {
     if (!store.state.isLoggedIn) {
       return redirect("/login");
     }

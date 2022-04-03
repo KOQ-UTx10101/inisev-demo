@@ -45,7 +45,13 @@ export default {
 
   // Axios module configuration
   axios: {
-    prefix: "/api",
+    baseUrl: "http://localhost:3000/api",
+  },
+
+  publicRuntimeConfig: {
+    axios: {
+      baseUrl: `${process.env.BASE_URL}/api`,
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

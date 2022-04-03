@@ -32,7 +32,7 @@
     </header>
 
     <main class="page__content">
-      <aside v-if="showSideBar" class="page__content__sidebar">
+      <aside v-show="showSideBar" class="page__content__sidebar">
         <div class="page__content__sidebar__top">
           <nuxt-link
             v-for="idx in 4"

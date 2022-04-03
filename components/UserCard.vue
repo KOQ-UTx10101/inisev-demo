@@ -5,7 +5,7 @@
     @mouseleave="hovering = false"
   >
     <img class="user-card__image" :alt="name" :src="image" />
-    <div v-if="hovering" class="user-card__details">
+    <div v-show="hovering" class="user-card__details">
       <a
         :href="`mailto:${email}?subject=We%20are%20hiring%21&body=Hello%2C%20${name}.%20We%E2%80%99d%20like%20to%20propose%20you%20an%20offer.`"
         class="user-card__details--email"

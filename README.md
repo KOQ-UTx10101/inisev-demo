@@ -1,6 +1,6 @@
-# inisev-demo
+# inisev-demo: by Utkrisht Singh Chauhan
 
-## Build Setup
+## Commands
 
 ```bash
 # install dependencies
@@ -19,50 +19,34 @@ $ npm run generate
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
-## Special Directories
+## Project Overview
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+This project uses Nuxt.js (v2) + ExpressJS without any extra plugins.
 
-### `assets`
+### `api`
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+The api directory contains the expressjs backend that will be served by Nuxt.js done to expose the `GET /api/users` endpoint.
 
 ### `components`
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+The components directory contains the `UserCard` & `UserModal` Vue.js components used to build the `/users` page.
 
 ### `layouts`
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+Two Layouts have been created `default` acts as the guest layout & `loggedin` which facilitates protecting and displaying pages that require auth.
 
 ### `pages`
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+This directory contains the application views and routes.
 
 ### `static`
 
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+This directory contains the static files.
 
 ### `store`
 
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+This directory contains the Vuex store used to manage the Authentication state for the application.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+### `task`
+
+Contains the task related information.

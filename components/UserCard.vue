@@ -94,7 +94,7 @@ export default {
   left: 0;
 
   background-color: black;
-  opacity: 80%;
+  opacity: 0.8;
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, 0.271);
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);

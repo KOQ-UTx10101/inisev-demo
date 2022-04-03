@@ -391,7 +391,6 @@ export default Vue.extend({
   right: 40px;
 
   fill: white;
-  opacity: 100%;
 
   cursor: pointer;
 }

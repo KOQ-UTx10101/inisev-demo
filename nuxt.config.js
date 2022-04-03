@@ -50,7 +50,7 @@ export default {
 
   publicRuntimeConfig: {
     axios: {
-      baseUrl: `${process.env.BASE_URL}/api`,
+      baseUrl: `${process.env.BASE_URL || ""}/api`,
     },
   },
 
